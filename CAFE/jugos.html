@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"href="styles.css">
+    <title>Descripción</title>
+</head>
+<style>
+    body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: url(imagenes/madera.jpg);
+    background-size: cover;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.boton-redireccion {
+    background-color: yellow;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-decoration: 1.4rem;
+    border-radius: 12px;
+    position: absolute;
+    top: -1790px;
+    left: 10px;
+    margin-top: 1800px
+}
+   
+.container{
+    width: 1280;
+    margin: 20px auto 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.container .box{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 55px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+.container .box .imgBox{
+    position: relative;
+    overflow: hidden;
+}
+.container .box .imgBox img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 2s;
+}
+.container .box:hover .imgBox img{
+    transition: scale(1.2);
+}
+.container .box .detailis{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    text-align: center;
+    background: white;
+    transform: scaleY(0);
+    transition: transform .5s;
+}
+.container .box:hover .detailis{
+    transform: scaleY(1);
+}
+.container .box .detailis .content{
+    position: absolute;
+    top: 5%;
+    transform: rotateY(-50%);
+    text-align: center;
+    padding: 15px;
+    color: #fff;
+}
+.container .box .detailis .content h2{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    color: black;
+    text-align: center;
+}
+.container .box .detailis .content p{
+    margin: 10px 0 0;
+    padding: 0;
+    color: black;
+    text-align: center;
+}
+@media screen and (max-width: 1290px) {
+    .container {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .container .box{
+        display: block;
+    }    
+}
+
+
+
+
+</style>
+<body>
+    <a href="cafeteria .html" class="boton-redireccion">ATRAS</a>
+  
+    <div class="container">
+        <div class="box">
+            <div class="imgBox">
+                <img src="imagenes/limonada de menta.webp"alt="">
+            </div>
+            <div class="detailis">
+                <div class="content">
+                    <h2>Limonada con Menta</h2>
+                    <p>La limonada​ es una bebida de elaboración usualmente casera, a base de limón, agua y azúcar,
+                    que puede tener o no contenido alcohólico. Algunas versiones también llevan menta, jengibre y 
+                    otros cítricos como naranja y pomelo.</p>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgBox">
+                <img src="imagenes/pomelo con menta.jpg"alt="">
+            </div>
+            <div class="detailis">
+                <div class="content">
+                    <h2>Pomelo con menta</h2>
+                    <p>Ingredientes: Jugo de pomelo, menta fresca, agua (o agua con gas), hielo y endulzante
+                    (azúcar, miel o edulcorante).<br> Variantes: Puede incluir jugo de limón para más acidez, jengibre
+                    para un toque picante, o servirse tipo "frozen" (licuado con hielo).<br> Beneficios: Es una opción 
+                    hidratante, a menudo sin alcohol, que facilita la digestión y aporta frescura.</p>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgBox">
+                <img src="imagenes/limonada-fresa.jpg"alt="">
+            </div>
+            <div class="detailis">
+                <div class="content">
+                    <h2> Frutilla y Limon</h2>
+                    <p>Sabor: Intensamente fresco, equilibrando el dulzor de la fresa con el toque ácido del limón.
+                    <br>Aplicaciones: Muy popular en limonadas de fresa, mermeladas combinadas, tartas, batidos, y ensaladas,
+                    donde el limón realza el sabor de la frutilla. <br>Beneficios: Aporta un alto valor nutricional, refresca y aporta energía.  </p>
+                </div>
+            </div>
+        </div>
+       
+        
+         
+    </div>
+</body>
+</html>

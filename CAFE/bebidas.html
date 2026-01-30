@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"href="styles.css">
+    <title>Descripción</title>
+</head>
+<style>
+    body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: url(imagenes/fondo.jpg);
+    background-size: cover;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.boton-redireccion {
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-decoration: 1.4rem;
+    border-radius: 12px;
+    position: absolute;
+    top: -1795px;
+    left: 1200px;
+    margin-top: 1800px
+}
+   
+.container{
+    width: 1280;
+    margin: 20px auto 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.container .box{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 55px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+.container .box .imgBox{
+    position: relative;
+    overflow: hidden;
+}
+.container .box .imgBox img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 2s;
+}
+.container .box:hover .imgBox img{
+    transition: scale(1.2);
+}
+.container .box .detailis{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    text-align: center;
+    background: black;
+    transform: scaleY(0);
+    transition: transform .5s;
+}
+.container .box:hover .detailis{
+    transform: scaleY(1);
+}
+.container .box .detailis .content{
+    position: absolute;
+    top: 5%;
+    transform: rotateY(-50%);
+    text-align: center;
+    padding: 15px;
+    color: #fff;
+}
+.container .box .detailis .content h2{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+.container .box .detailis .content p{
+    margin: 10px 0 0;
+    padding: 0;
+    color: white;
+    text-align: center;
+}
+@media screen and (max-width: 1290px) {
+    .container {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .container .box{
+        display: block;
+    }    
+}
+
+
+
+
+</style>
+<body>
+    <a href="cafeteria .html" class="boton-redireccion">ATRAS</a>
+  
+    <div class="container">
+        <div class="box">
+            <div class="imgBox">
+                <img src="imagenes/café.jpg"alt="">
+            </div>
+            <div class="detailis">
+                <div class="content">
+                    <h2>Café</h2>
+                    <p>Ingrediente base: Granos de café tostados y molidos (principalmente de las especies 
+                    Arabica o Robusta).<br>Elemento de preparación: Agua caliente (esencial para la extracción del 
+                    sabor y aroma).</p>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgBox">
+                <img src="imagenes/cafe cortado.png"alt="">
+            </div>
+            <div class="detailis">
+                <div class="content">
+                    <h2>Café cortado</h2>
+                    <p>Generalmente, se usa una proporción de 1:1 de espresso y leche caliente. ¡Así de fácil! Tamaño: 
+                    A diferencia de otros cafés con leche, como el cappuccino o el latte, el cortado es una bebida más
+                     pequeña, ideal para aquellos que buscan una experiencia de café concentrada pero suave. ¡Corto pero
+                    intenso!30</p>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgBox">
+                <img src="imagenes/café-con-leche.jpg"alt="">
+            </div>
+            <div class="detailis">
+                <div class="content">
+                    <h2> Café con Leche</h2>
+                    <p>Al igual que el café latte, el café con leche está preparado con café espresso y leche. Mientras que,
+                    en el café con leche, la proporción de ambos ingredientes suele ser 50-50, el café latte contiene una 
+                    cantidad mayor de leche que de café.</p>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgBox">
+                <img src="imagenes/naranja.webp"alt="">
+            </div>
+            <div class="detailis">
+                <div class="content">
+                    <h2>Zumo de naranja</h2>
+                    <p> Naranjas frescas: Fuente principal del zumo, rico en agua (aprox. 88%).
+            Vitamina C (ácido ascórbico): Antioxidante esencial presente en altas concentraciones.
+            Azúcares naturales: Fructosa, glucosa y sacarosa.
+            Minerales: Potasio, magnesio y calcio.
+            Nutrientes adicionales (opcional): Ácido cítrico, flavonoides, carotenoides, y en algunos casos,
+            calcio o vitamina D añadidos. </p>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgBox">
+                <img src="imagenes/Batido de cacao.png"alt="">
+            </div>
+            <div class="detailis">
+                <div class="content">
+                    <h2>Batido de cacao</h2>
+                    <p>Al igual que los batidos de leche, los batidos de leche también son bebidas lácteas frías 
+                    . Generalmente se preparan con leche, helado o leche helada, emulsionante o estabilizante, y 
+                    saborizantes o edulcorantes (por ejemplo, jarabe de frutas o salsa de chocolate). A diferencia 
+                    de los batidos de leche, los batidos de leche contienen helado.</p>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgBox">
+                <img src="imagenes/Agua Natural.png"alt="">
+            </div>
+            <div class="detailis">
+                <div class="content">
+                    <h2>Agua Natural</h2>
+                    <p>Composición Química: Formada por dos átomos de hidrógeno y uno de oxígeno (
+                    \(H_{2}O\)).Estado: Líquido a temperatura ambiente, aunque existe en forma sólida (hielo) 
+                    y gaseosa (vapor).Propiedades: Excelente disolvente, incolora, inodora, insípida y con un
+                    pH neutro (cercano a 7). </p>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgBox">
+                <img src="imagenes/aguacongas.jpg.webp"alt="">
+            </div>
+            <div class="detailis">
+                <div class="content">
+                    <h2>Agua con Gas</h2>
+                    <p>Agua: Puede ser agua mineral natural, de manantial o agua purificada.Dióxido de
+                    Carbono (\(CO_{2}\)): Añadido artificialmente o presente de forma natural en el manantial
+                    para crear la carbonatación.Minerales (Opcional): Dependiendo de la marca o tipo, puede
+                    contener minerales añadidos como bicarbonato de sodio, cloruro de sodio o sulfato de 
+                    potasio, a menudo presentes en la "soda" o "club soda" para mejorar el sabor.  </p>
+                </div>
+            </div>
+        </div>
+        
+         
+    </div>
+</body>
+</html>

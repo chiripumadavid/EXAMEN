@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"href="styles.css">
+    <title>Descripción</title>
+</head>
+<style>
+    body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: url(imagenes/cafe.webp);
+    background-size: cover;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.boton-redireccion {
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-decoration: 1.4rem;
+    border-radius: 12px;
+    position: absolute;
+    top: -1795px;
+    left: 1200px;
+    margin-top: 1800px
+}
+   
+.container{
+    width: 1280;
+    margin: 20px auto 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.container .box{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 55px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+.container .box .imgBox{
+    position: relative;
+    overflow: hidden;
+}
+.container .box .imgBox img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 2s;
+}
+.container .box:hover .imgBox img{
+    transition: scale(1.2);
+}
+.container .box .detailis{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    text-align: center;
+    background: black;
+    transform: scaleY(0);
+    transition: transform .5s;
+}
+.container .box:hover .detailis{
+    transform: scaleY(1);
+}
+.container .box .detailis .content{
+    position: absolute;
+    top: 5%;
+    transform: rotateY(-50%);
+    text-align: center;
+    padding: 15px;
+    color: #fff;
+}
+.container .box .detailis .content h2{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+.container .box .detailis .content p{
+    margin: 10px 0 0;
+    padding: 0;
+    color: white;
+    text-align: center;
+}
+@media screen and (max-width: 1290px) {
+    .container {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .container .box{
+        display: block;
+    }    
+}
+
+
+
+
+</style>
+<body>
+    <a href="cafeteria .html" class="boton-redireccion">ATRAS</a>
+  
+    <div class="container">
+        <div class="box">
+            <div class="imgBox">
+                <img src="imagenes/Bocadillo de Chorizo.jpg"alt="">
+            </div>
+            <div class="detailis">
+                <div class="content">
+                    <h2>Bocadillo de Chorizo</h2>
+                    <p>Variedad: Se puede consumir frío (chorizo curado) o caliente, donde el chorizo libera su grasa
+                    y aroma, a veces combinado con queso para fundir. <br>Pan: Se prefiere pan crujiente por fuera y tierno
+                    por dentro, a veces tostado en sartén o plancha.<br> Ingredientes adicionales: Se suele acompañar de
+                    aceite de oliva, tomate natural o incluso pimientos.</p>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgBox">
+                <img src="imagenes/bocadillo de jamón.jpg"alt="">
+            </div>
+            <div class="detailis">
+                <div class="content">
+                    <h2>Bocadillo de Jamón</h2>
+                    <p>Ingredientes Clave: Pan, jamón de calidad (ibérico o serrano) y a menudo aceite de oliva virgen 
+                    extra. Variaciones Populares: <br>Con Tomate: Pan tostado, frotado con tomate maduro y aceite. <br>Con
+                    Queso: Añadiendo queso curado o fundido.Con Huevo: Incorporando huevo frito o cocido.</p>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgBox">
+                <img src="imagenes/bocadillo-de-tortilla.jpg"alt="">
+            </div>
+            <div class="detailis">
+                <div class="content">
+                    <h2> Bocadillo de Tortilla</h2>
+                    <p>Pan: Baguette o pan de hogaza crujiente. Variaciones: Se puede comer solo, o con adiciones como tomate rallado, pimientos del piquillo, mayonesa, alioli, lomo o queso.
+Servicio: Se consume tanto frío como caliente, siendo un alimento rápido típico en bares y hogares.
+Valor Nutricional: Es un bocadillo energético que combina carbohidratos, proteínas de alta calidad y grasas saludables. </p>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgBox">
+                <img src="imagenes/bocadillo de queso.webp"alt="">
+            </div>
+            <div class="detailis">
+                <div class="content">
+                    <h2>Bocadillo de queso</h2>
+                    <p> Abrimos la pieza de pan y por otro lado, la cuña de queso semicurado la partimos en finos trozos
+                    triangulares que introducimeros posteriormente entre ambas rebanadasPlan blanco de trigo<br>Queso
+                    manchego semicurado</p>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgBox">
+                <img src="imagenes/bocadillo-de-bacon.jpg"alt="">
+            </div>
+            <div class="detailis">
+                <div class="content">
+                    <h2>Bocadillo de Bacon</h2>
+                    <p>Ingredientes Clave: Bacon (o beicon) ahumado, pan crujiente.<BR>Preparación: El bacon se cocina
+                    en su propia grasa hasta quedar tostado. El pan suele tostarse ligeramente, a veces usando la grasa 
+                    del bacon para más sabor.</p>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgBox">
+                <img src="imagenes/bocadillo-de-atun.jpg"alt="">
+            </div>
+            <div class="detailis">
+                <div class="content">
+                    <h2>Bocadillo de Atun</h2>
+                    <p>Ingredientes principales: Atún en lata desmigado, pan (a menudo crujiente), y un agente aglutinante 
+                    como mayonesa, aunque también se usa aceite de oliva o queso de untar para un sabor más ligero. </p>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgBox">
+                <img src="imagenes/bocadillo de vegetal.jpg"alt="">
+            </div>
+            <div class="detailis">
+                <div class="content">
+                    <h2>Bocadillo Vegetal</h2>
+                    <p>Un sándwich es un plato que generalmente consiste en carne, queso, salsas y verduras y se utiliza 
+                    como relleno entre rebanadas de pan o se coloca encima de una rebanada de pan </p>
+                </div>
+            </div>
+        </div>
+        
+         
+    </div>
+</body>
+</html>

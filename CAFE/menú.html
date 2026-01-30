@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Menú Cafetería</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="" rel="stylesheet">
+</head>
+<style>
+    body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: brown;
+}
+
+.menu {
+    max-width: 1000px;
+    margin: 40px auto;
+    background: beige;
+    padding: 40px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.15);
+}
+
+.menu-title {
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    font-size: 48px;
+    margin: 0;
+}
+
+.menu-subtitle {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.content {
+    display: flex;
+    gap: 40px;
+}
+
+.column {
+    flex: 1;
+}
+
+.section h3 {
+    background: #f4b860;
+    padding: 10px;
+    margin: 0 0 10px 0;
+    font-size: 22px;
+}
+
+.section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 30px 0;
+}
+
+.section li {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 0;
+    border-bottom: 1px dotted #aaa;
+}
+
+.image-box img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+.offer {
+    background: #f4b860;
+    padding: 20px;
+    text-align: center;
+}
+
+.offer-title {
+    font-weight: 700;
+    font-size: 24px;
+    margin: 0;
+}
+
+.offer-price {
+    font-size: 42px;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+    color: #333;
+}
+
+.boton-redireccion {
+    background-color: brown;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-decoration: 1.4rem;
+    border-radius: 12px;
+    position: absolute;
+    top: -900px;
+    left: 180px;
+    margin-top: 1000px
+}
+   
+</style>
+<body>
+  <a href="cafeteria .html" class="boton-redireccion">ATRAS</a>
+
+<div class="menu">
+    <h1 class="menu-title">Menú</h1>
+    <h2 class="menu-subtitle">CAFETERÍA</h2>
+
+    <div class="content">
+        <!-- Columna izquierda -->
+        <div class="column">
+            <div class="section">
+                <h3>Bocadillos</h3>
+                <ul>
+                    <li><span>Bocadillo de Chorizo</span><span>5 Bs</span></li>
+                    <li><span>Bocadillo de Jamón</span><span>5 Bs</span></li>
+                    <li><span>Bocadillo de Tortilla</span><span>5 Bs</span></li>
+                    <li><span>Bocadillo de Queso</span><span>5 Bs</span></li>
+                    <li><span>Bocadillo de Bacon</span><span>5 Bs</span></li>
+                    <li><span>Bocadillo de Atún</span><span>5 Bs</span></li>
+                    <li><span>Bocadillo Vegetal</span><span>5 Bs</span></li>
+                </ul>
+            </div>
+
+            <div class="image-box">
+                <img src="imagenes/cappuccino.jpg" alt="Café y tostadas">
+            </div>
+        </div>
+
+        <!-- Columna derecha -->
+        <div class="column">
+            <div class="section">
+                <h3>Bebidas</h3>
+                <ul>
+                    <li><span>Café</span><span>5 Bs</span></li>
+                    <li><span>Café cortado</span><span>8 Bs</span></li>
+                    <li><span>Café con leche</span><span>10 Bs</span></li>
+                    <li><span>Zumo de naranja</span><span>8 Bs</span></li>
+                    <li><span>Batido de cacao</span><span>10 Bs</span></li>
+                    <li><span>Agua natural</span><span>5 Bs</span></li>
+                    <li><span>Agua con gas</span><span>8 Bs</span></li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h3>Jugos y Refrescos</h3>
+                <ul>
+                    <li><span>Limonada con menta</span><span>15 Bs</span></li>
+                    <li><span>Pomelada con menta</span><span>10 Bs</span></li>
+                    <li><span>Frutilla y limón</span><span>8 Bs</span></li>
+                </ul>
+            </div>
+
+            <div class="offer">
+                <p class="offer-title">CAFÉ + BOCADILLOS</p>
+                <p class="offer-price"></p>
+                <small>*Oferta desayuno hasta las 12:00</small>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        ¡Pagina hecha por Dayvid!
+    </footer>
+</div>
+
+</body>
+</html>
